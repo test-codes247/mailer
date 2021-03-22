@@ -1,5 +1,5 @@
 //OFFLINE USE
-dbPassword = "mongodb://127.0.0.1/mailer";
+dbPassword = process.env.DB_STRING || "mongodb://127.0.0.1/mailer";
 
 module.exports = {
   mongoURI: dbPassword,
